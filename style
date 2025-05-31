@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Just for visual context */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4CAF50, #91c2a6); /* Adjust colors to match your image */
+    color: white;
+    padding: 10px 20px;
+    height: 90px; /* Approximately 90px height as per your image analysis */
+    box-sizing: border-box; /* Include padding in the height */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px; /* Adjust size as needed */
+    margin-right: 10px;
+    /* You might need to adjust color if the icon is meant to be a specific color */
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Space between menu items */
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Darker background for dropdown */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position below the "PAGES" link */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white !important; /* Override parent link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-right .profile-icon {
+    font-size: 40px; /* Adjust size for the circular icon */
+    background-color: white;
+    color: #2E8B57; /* Icon color, matching the gradient */
+    border-radius: 50%;
+    width: 40px; /* Ensure it's a perfect circle */
+    height: 40px; /* Ensure it's a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline for the icon link */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-right .profile-icon:hover {
+    background-color: #f0f0f0;
+}
+
+/* Adjustments for the gradient colors to match the image more closely */
+.navbar {
+    background: linear-gradient(to right, #2c97a7, #1d6e7a); /* Darker blue-green gradient */
+}
+
+.navbar-right .profile-icon {
+    color: #1d6e7a; /* Match the darker gradient color */
+}
